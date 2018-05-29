@@ -6,13 +6,13 @@ import { AboutComponent, PortafolioComponent, PortafolioItemComponent
                                      en el archivo de rutas creado. */
 
 const app_routes: Routes = [
-    { path: '', component: PortafolioComponent },
+    { path: 'home', component: PortafolioComponent },
     /*Se agrega para direccionar al home cuando una pagina no escoge nada.*/
     { path: 'about', component: AboutComponent },
     /*Se agrega para direccionar al about.*/
     { path: 'portafolioItem', component: PortafolioItemComponent },
     /*Se agrega para direccionar al item del portafolio.*/
-    { path: '**', pathMatch: 'full', redirectTo: '' }
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }
     /* Aqui especifica que cuando no encuentre la ruta la envie al home ''. */
 ];
 
