@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 
+import { InformacionService } from './services/informacion.service';
+/* Se importa el servicio para usarlo.*/
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  descripcion = 'Descrip';
+
+   
+    constructor( public _is: InformacionService) { /* Se utiliza el servicio. */
+
+    }
+
 }
