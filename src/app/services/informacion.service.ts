@@ -7,6 +7,8 @@ import { Http } from '@angular/http'; /* Se debe agregar el modulo http para lee
 export class InformacionService {
 
   info: any = [];
+  /*Se agrega esta propiedad para cargar la
+  información del JSON en un objeto (info).  */
   cargada: Boolean = false;
 
   constructor( public http: Http ) {

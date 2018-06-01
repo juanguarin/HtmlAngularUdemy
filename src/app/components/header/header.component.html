@@ -16,7 +16,12 @@
     Se quita el enrutamiento a index.html ya que esta pagina no existe y se agrega el enrutamiento con
     routerLink.-->
     <h1 class="rk-logo"> 
-      <a routerLink="/">urku portfolio <sup>tm</sup> </a> 
+      <!--<a routerLink="/">urku portfolio <sup>tm</sup> </a>
+      Se agrega en esta parte la información que se obtiene del servicio, 
+      accediendo a la variable usada en el componente.
+      -->
+      <a routerLink="/"> {{_is.info.titulo}} <sup>tm</sup>
+      </a>
     </h1>
 
     <nav class="rk-navigation">
@@ -42,7 +47,7 @@
 
       </ul>
       <form class="rk-search">
-        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+        <input type="text" placeholder="Buscar" id="urku-search" class="rk-search-field">
         <label for="urku-search">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-search"></use>
