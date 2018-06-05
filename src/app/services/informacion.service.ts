@@ -35,7 +35,7 @@ export class InformacionService {
   public carga_de_firebase() {
     /*Se pone la ruta de la fuente de la infromación en este caso firebase. */
     this.http.get('https://angularhtmlweb.firebaseio.com/equipo.json')
-      .subscribe(data => { // console.log(data.json()); // Esta linea sirve para escribir en la consola del navegador.
+      .subscribe(data => { console.log(data.json()); // Esta linea sirve para escribir en la consola del navegador.
         this.info_firebase = data.json();
         this.cargada_firebase = true;
       });

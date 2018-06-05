@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// Se importa el servicio para poder utilizar la información de FireBase.
+import { InformacionService } from '../../services/informacion.service';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  // Se inyecta en el constructor el servicio y se asigna a la variable _is.
+  // La información que se trae desde FireBase.
+  constructor( public _is: InformacionService) { }
 
   ngOnInit() {
   }
