@@ -14,6 +14,7 @@ import { app_routing } from './app.routes';
 
 import { InformacionService } from './services/informacion.service';
 /* Se importa el archivo con los servicios creados.*/
+import { ProdcutosService } from './services/prodcutos.service';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -31,7 +32,7 @@ import { PortafolioItemComponent } from './components/portafolio-item/portafolio
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    PortafolioItemComponent /* Se agregan los componentes */
+    PortafolioItemComponent, /* Se agregan los componentes */
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ import { PortafolioItemComponent } from './components/portafolio-item/portafolio
     HttpModule/* Se agrega en los imports los modulos como el
     routing o HttpModule.*/
   ],
-  providers: [InformacionService], /*Se agregan los archivo con los servicios creados.*/
+  providers: [InformacionService, ProdcutosService], /*Se agregan los archivo con los servicios creados.*/
   bootstrap: [AppComponent]
 })
 export class AppModule { }
