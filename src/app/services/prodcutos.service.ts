@@ -22,6 +22,7 @@ export class ProdcutosService {
 
       this.http.get('https://angularhtmlweb.firebaseio.com/productos_idx.json')
       .subscribe( res => {  console.log(res.json());
+      this.productos = res.json();
       this.cargando = true;
       });
 
