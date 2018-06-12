@@ -4,15 +4,29 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ProdcutosService {
   productos: any [] = [];
+  productos_filtrado: any[] = []; /* Arreglo para guardar los prodcuto
+  filtrados en el buscar de la pagina. */
   cargando: Boolean = true;
 
   constructor( private http: Http) {
 
     this.cargar_producto();
   }
+
+/**
+* Metodo para buscar prodcuto según un termino enviado.
+ */
+public buscar_producto( termino: string) {
+  console.log( 'Buscando productos' );
+  console.log( this.productos.length );
+  this.productos.forEach( prod => {
+      console.log( prod );
+  });
+
+}
+
   /**
-   * Metodo para cargar los productos
-   * de la pagian del portafolio.
+   * Metodo para cargar los productos de la pagian del portafolio.
    */
   public cargar_producto() {
 
