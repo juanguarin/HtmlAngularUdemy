@@ -46,14 +46,29 @@
         </li>
 
       </ul>
-      <form class="rk-search">
+      <!--Se deben hacer varias cosas entre ellas cambiar el form por un div. Se agrega el name, se agrega una 
+      referencia local #buscarTexto. Usar el evento keyup.enter para utilizar la fución de busqueda buscar_producto().
+ 
+          <form class="rk-search">
         <input type="text" placeholder="Buscar" id="urku-search" class="rk-search-field">
         <label for="urku-search">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-search"></use>
           </svg>
         </label>
-      </form>
+      </form>-->
+
+      <div class="rk-search">
+        <input name="buscar" 
+               (keyup.enter)="buscar_producto( buscarTexto.value )"
+               #buscarTexto
+               type="text" placeholder="Buscar...." id="urku-search" class="rk-search-field">
+        <label for="urku-search">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-search"></use>
+          </svg>
+        </label>
+      </div>
     </nav>
   </div>
 </header>

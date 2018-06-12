@@ -22,3 +22,9 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+/*Se copia el codigo del css para el loading SVN*/
+svg path,
+svg rect{
+  fill: black;
+}
