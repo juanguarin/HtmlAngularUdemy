@@ -14,7 +14,7 @@ export class PortafolioItemComponent {
   producto: any = undefined;
   cod: string = undefined;
 
-  constructor(private router: ActivatedRoute, private _ps: ProdcutosService) {
+  constructor(private router: ActivatedRoute, public _ps: ProdcutosService) {
     /*Este metodo devuelve un objeto que se asigna a parametros, se obtiene
     el parametro id donde viene la información enviada desde el enrutamiento del
     app.routes.ts. */

@@ -14,7 +14,7 @@ export class SearchComponent  {
   termino: string = undefined;
 
   constructor( router: ActivatedRoute,
-               private _ps: ProdcutosService) {
+               public _ps: ProdcutosService) {
     /*Este metodo devuelve un objeto que se asigna a parametros, se obtiene
    el parametro id donde viene la información enviada desde el enrutamiento del
    app.routes.ts. */
