@@ -19,8 +19,8 @@ export class ProdcutosService {
 * Metodo para buscar prodcuto según un termino enviado.
  */
 public buscar_producto( termino: string) {
-  console.log( 'Buscando productos' );
-  console.log( this.productos.length );
+  // console.log( 'Buscando productos' );
+  // console.log( this.productos.length );
 
   if (this.productos.length === 0) {
 
